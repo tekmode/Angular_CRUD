@@ -1,0 +1,28 @@
+<div align="center">
+    <h1>Select an Employee to Edit</h1>
+        <form name="edit" action="">
+        <select name="ename" [(ngModel)]='ename'>
+            <option *ngFor="let employee of employees" value={{employee.name}}>{{employee.name}}</option>
+    </select>
+ 
+    <input type="button" value="Edit Employee" (click)="update()">
+    <br>
+<div>
+  <h1>Update Values</h1>
+ <input type="hidden" name="id" [(ngModel)]="id" value={{id}}>
+  <table><tr><td>
+    <label>Name:</label></td><td>
+ <input type="text" name="empname" [(ngModel)]="empname" value=empname></td>
+</tr>
+<tr>
+  <td><label>Designation</label></td>
+  <td><input type="text" name="designation" [(ngModel)]="designation" value=designation>
+</td>
+</tr><tr align="center" >
+<td colspan="2">      
+<input type="button" value="Update Employee" (click)="editval()">
+</td>
+</tr>
+</table></div>
+  </form>
+        </div>

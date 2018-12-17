@@ -1,0 +1,10 @@
+<div align="center">
+<h1>Select an Employee to Delete</h1>
+    <form name="delform" action="">
+    <select name="ename" [(ngModel)]='ename'>
+    <option *ngFor="let employee of employees" value={{employee.name}}>
+        {{employee.name}}</option>
+    </select>
+<input type="button" value="Delete Employee" (click)="delval()">
+      </form>
+    </div>

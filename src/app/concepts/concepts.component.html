@@ -1,0 +1,26 @@
+
+    <div class="container color-dark">
+        <div class="col">
+          <h1>Adding New Employee</h1>
+        </div>
+        <div class="col">
+            <h2>Total Employees:{{totalemp}}</h2>
+          </div>
+    </div>
+
+    <div class="container color-light" [@employees]="employees.length">
+        <div class="col">
+          <p class="sm">Please fill the form to add New Employee</p>
+            <form align="center">
+              <input type="text" class="txt" name="empname" placeholder="Name of the Employee" [(ngModel)]="emp">
+              <br><span>{{emp}}</span>
+              <input type="submit" class="btn" [value]="btnval" (click)="addemp()">
+            </form>
+        </div>
+        <div class="col">
+          <p class="life-containter" *ngFor="let employee of employees; let i=index" (click)="rememp(i)">{{i+1}} {{employee}}</p>          
+        </div>     
+    </div>
+
+  
+    

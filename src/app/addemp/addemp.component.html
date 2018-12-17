@@ -1,0 +1,29 @@
+
+<div align="center">
+<h1>Add a New Employee</h1>
+  <form name="form1" action="" method="POST">
+<table>
+  <tr>
+    <td>
+  <label >Enter Your Name:</label>
+    </td>
+    <td>
+    <input type="text" name="name" placeholder="Enter your full Name" [(ngModel)]="ename">
+  </td>
+  </tr>
+  <tr>
+    <td>
+      <label >Enter Your Designation:</label>
+    </td>
+    <td>
+    <input type="text" name="designation" placeholder="Enter your Designation" [(ngModel)]="edesg">
+  </td>
+  </tr>
+  <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Submit" (click)="saveval()">
+      </td>
+    </tr>
+</table>
+</form>
+</div>

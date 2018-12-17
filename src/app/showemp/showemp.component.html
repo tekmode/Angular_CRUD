@@ -1,0 +1,13 @@
+<H1 align="center">List of All Employee</H1>
+<table align="center" border="1">
+  <tr><th>Sr. No</th>
+    <th>Name</th>
+    <th>Designation</th>
+  </tr>
+  
+  <tr *ngFor="let employee of employees let i=index">
+  <td>{{i+1}}</td>
+  <td>{{employee.name}}</td>
+<td>{{employee.designation}}</td>
+  </tr>
+</table>

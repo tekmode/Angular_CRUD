@@ -1,0 +1,8 @@
+<h1 align="center">Displaying Google Maps</h1> 
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <button (click)="setMapType('terrain')" class="btn btn-primary">Terrain</button>
+        <button (click)="setMapType('satellite')" class="btn btn-danger">Satellite</button>
+        <button (click)="setMapType('roadmap')" class="btn btn-warning">Road Map</button>
+      </div>
+
+      <div class="center" #gmap style="width:100%;height:400px;"></div>
